@@ -1,0 +1,11 @@
+{
+  "name": "@turtlemay/routines",
+  "version": "0.0.3",
+  "description": "Coroutines via generators.",
+  "author": {
+    "name": "turtlemay",
+    "email": "turtlemay@me.com"
+  },
+  "main": "src/index.js",
+  "license": "MIT"
+}
