@@ -1,6 +1,6 @@
 {
   "name": "@turtlemay/routines",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Coroutines via generators.",
   "author": {
     "name": "turtlemay",
