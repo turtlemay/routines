@@ -42,6 +42,7 @@ Start a routine:
 ```javascript
 co.start(myRoutine());
 ```
+#### Waiting
 
 Wait for another routine:
 
