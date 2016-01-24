@@ -42,3 +42,27 @@ Start a routine:
 ```javascript
 co.start(myRoutine());
 ```
+
+Wait for another routine:
+
+```javascript
+function* myRoutine2() {
+  console.log('Waiting for other routine...');
+  yield* myRoutine();
+  console.log('Other routine finished.');
+}
+```
+
+Wait for an amount of time:
+
+```javascript
+import {waitForSeconds} from '@turtlemay/routines';
+```
+
+```javascript
+function* myRoutine() {
+  console.log('Waiting for 1 second...');
+  yield* waitForSeconds(1);
+  console.log('Done...');
+}
+```
