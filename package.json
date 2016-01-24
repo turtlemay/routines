@@ -1,6 +1,6 @@
 {
   "name": "@turtlemay/routines",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Coroutines via generators.",
   "author": {
     "name": "turtlemay",
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/turtlemay/routines.git"
   },
+  "files": [
+    "src/index.js",
+    "src/index.d.ts"
+  ],
   "main": "src/index.js",
   "license": "MIT"
 }
