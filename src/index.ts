@@ -36,9 +36,7 @@ export class RoutineManager {
 
   /** Stop all active routines. */
   public stopAll(): void {
-    for (const routine of this._routines) {
-      this.stop(routine);
-    }
+    this._routines.clear();
   }
 
   /** Update all active routines and stop them if they are finished. */
