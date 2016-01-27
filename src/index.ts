@@ -3,10 +3,10 @@
 export type Routine = IterableIterator<any>;
 
 /** Yield continuously for a number of seconds. */
-export function* waitForSeconds(seconds: number) {
+export function* waitForSeconds(seconds: number): IterableIterator<any> {
   const startTime = new Date().getTime();
   const endTime = startTime + seconds * 1000;
-  while (new Date().getTime() < endTime) yield;
+  while (new Date().getTime() < endTime) { yield; }
 }
 
 /** Manage a collection of coroutine-like generator functions. */
@@ -42,7 +42,7 @@ export class RoutineManager {
   /** Update all active routines and stop them if they are finished. */
   public updateAll(): void {
     for (const routine of this._routines) {
-      if (!routine.next().done) continue;
+      if (!routine.next().done) { continue; }
       this.stop(routine);
     }
   }
